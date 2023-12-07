@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel = "stylesheet" href = "singleplayer_styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <title>Document</title>
+</head>
+<body>
+    <div class="satelliteimageslideshow-container">
+        <div class = "answerpanel" style="display: block;">
+            <div class = "question1" id="q1" onclick="currentSlide(1)">Unanswered</div>
+            <div class = "question2" id="q2" onclick="currentSlide(2)">Unanswered</div>
+            <div class = "question3" id="q3" onclick="currentSlide(3)">Unanswered</div>
+            <div class = "question4" id="q4" onclick="currentSlide(4)">Unanswered</div>
+            <div class = "question5" id="q5" onclick="currentSlide(5)">Unanswered</div>
+        </div>
+        <div class = "satelliteimage" id = 1>
+            <img id = "sat1" style="width:100%">
+            <form id="form1" onsubmit="return false;">
+                <input style="position:absolute; top:95%; left:31%; width:20%;" type="text" id="userInput1" />
+                <input style="position:absolute; top:97%; left:80%; width:20%;" type="submit" onclick="checkans();" />
+            </form>
+        </div>
+        <div class = "satelliteimage" id = 2>
+            <img id = "sat2" style="width:100%">
+            <form id="form2" onsubmit="return false;">
+                <input style="position:absolute; top:95%; left:31%; width:20%;" type="text" id="userInput2" />
+                <input style="position:absolute; top:97%; left:80%; width:20%;" type="submit" onclick="checkans();" />
+            </form>
+        </div>
+        <div class = "satelliteimage" id = 3>
+            <img id = "sat3" style="width:100%">
+            <form id="form3" onsubmit="return false;">
+                <input style="position:absolute; top:95%; left:31%; width:20%;" type="text" id="userInput3" />
+                <input style="position:absolute; top:97%; left:80%; width:20%;" type="submit" onclick="checkans();" />
+            </form>
+        </div>
+        <div class = "satelliteimage" id = 4>
+            <img id = "sat4" style="width:100%">
+            <form id="form4" onsubmit="return false;">
+                <input style="position:absolute; top:95%; left:31%; width:20%;" type="text" id="userInput4" />
+                <input style="position:absolute; top:97%; left:80%; width:20%;" type="submit" onclick="checkans();" />
+            </form>
+        </div>
+        <div class = "satelliteimage" id = 5>
+            <img id = "sat5" style="width:100%">
+            <form id="form5" onsubmit="return false;">
+                <input style="position:absolute; top:95%; left:31%; width:20%;" type="text" id="userInput5" />
+                <input style="position:absolute; top:97%; left:80%; width:20%;" type="submit" onclick="checkans();" />
+            </form>
+        </div>
+        <a class="prev" style="width: 40px; margin-left:100px; margin-right:0;" onclick="SlideChange(-1)">&#10094;</a>
+        <a class="next" style="width: 40px; margin-right:325px; margin-left:0; float:right;" onclick="SlideChange(1)">&#10095;</a>
+    </div>
+<script src = "singleplayer.js"></script>
+</body>
+</html>

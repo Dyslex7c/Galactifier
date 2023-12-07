@@ -1,0 +1,59 @@
+a {
+    font-size: 15px;
+    text-align: center;
+    font-weight: lighter;
+    background-color: rgb(240, 250, 255);
+    display: inline-block;
+    width: 20px;
+}
+
+a:hover {
+    cursor: pointer;
+    background-color: rgb(63, 63, 63);
+    color: white;
+}
+.satelliteimageslideshow-container {
+    align-content: center;
+}
+.satelliteimage {
+    width: 84%;
+}
+
+input[type = "text"] {
+    background-color: whitesmoke;
+    color: black;
+    font-size: 15px;
+    width: 20px;
+    font-family: "Montserrat", sans-serif;
+}
+ input[type = "submit"] {
+    font-family: "Montserrat", sans-serif;
+    background-color: whitesmoke;
+    font-weight:bolder;
+ }
+
+ input[type = "submit"]:hover {
+    cursor: pointer;
+    background-color: cornflowerblue;
+ }
+
+.answerpanel {
+    background-color: black;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    float: right;
+    height: 630px;
+    width: 190px;
+}
+
+.question1 , .question2, .question3, .question4, .question5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10%;
+}
+
+.question1:hover , .question2:hover, .question3:hover, .question4:hover, .question5:hover{
+    cursor: pointer;
+    background-color: rgb(63, 63, 63);
+}
