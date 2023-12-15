@@ -42,8 +42,8 @@ input[type = "text"] {
     font-family: "Montserrat", sans-serif;
     color: white;
     float: right;
-    height: 630px;
-    width: 190px;
+    height: 95vh;
+    width: 15vw;
 }
 
 .question1 , .question2, .question3, .question4, .question5{
