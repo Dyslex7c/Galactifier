@@ -1,3 +1,36 @@
+document.getElementById("countdown-timer").innerHTML = "05:00";
+startTimer();
+function startTimer() {
+    var time = document.getElementById("countdown-timer").innerHTML;
+    var TimeArr = time.split(/[:]+/);
+    var min = TimeArr[0];
+    var sec = checkSec((TimeArr[1]-1));
+    if (sec == 59) {
+        min -= 1;
+    }
+    if (min == 0 && sec == 59) {
+        min = "0" + min;
+    }
+    if (min<0){
+        window.open("index.html", "_self")
+        return
+    }
+
+    document.getElementById("countdown-timer").innerHTML = min + ":" + sec;
+    setTimeout(startTimer, 1000);
+}
+
+function checkSec(sec) {
+    if (sec < 10 && sec >= 0) {
+        sec = "0" + sec;
+    }
+
+    if (sec < 0) {
+        sec = "59";
+    }
+    return sec;
+}
+
 function checkans() {
     const ansPanelText = document.querySelector(`#q${slideIndex}`);
     
@@ -88,7 +121,7 @@ var locations = [
     "cities/hyderabad5.png"
 ];
 
-for (var satelliteimagecount = 1; satelliteimagecount <= 5; satelliteimagecount++) {
+for (var satelliteimagecount = 1; satelliteimagecount <= 10; satelliteimagecount++) {
     let i = Math.floor(Math.random()*locations.length);
     eval('if (typeof sat' + satelliteimagecount + '.src !== String) {sat' + satelliteimagecount + '.src = locations[i]}');
     eval('console.log(`Image ${sat' + satelliteimagecount + '.src}`);');

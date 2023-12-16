@@ -12,6 +12,16 @@ a:hover {
     background-color: rgb(63, 63, 63);
     color: white;
 }
+
+p {
+    text-align: center;
+    display: block;
+    margin-block-start: 0px;
+    margin-block-end: 0px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
 .satelliteimageslideshow-container {
     align-content: center;
 }
