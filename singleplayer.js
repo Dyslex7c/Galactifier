@@ -1,4 +1,25 @@
-document.getElementById("countdown-timer").innerHTML = "05:00";
+function checkans() {
+    const ansPanelText = document.querySelector(`#q${slideIndex}`);
+    
+    var input = document.getElementById(`userInput${slideIndex}`).value;
+    var _src = document.getElementById(`sat${slideIndex}`).src.slice(29, -5).split('_');
+    console.log(_src)
+    if (_src.includes(input.toLowerCase())) 
+        {alert("CORRECT ANSWER!");
+        score += 4;
+        ansPanelText.textContent = "Answered";
+        document.getElementById(`q${slideIndex}`).style.color = "lime";
+        document.getElementById(`userInput${slideIndex}`).style.backgroundColor = "lightgreen";} else
+         {alert("WRONG ANSWER!")
+         score -= 1;
+         ansPanelText.textContent = "Wrong Answer";
+         document.getElementById(`q${slideIndex}`).style.color = "red";
+         document.getElementById(`userInput${slideIndex}`).style.backgroundColor = "coral"};
+         console.log(score);
+         
+}
+
+document.getElementById("countdown-timer").innerHTML = "01:00";
 startTimer();
 function startTimer() {
     var time = document.getElementById("countdown-timer").innerHTML;
@@ -12,7 +33,8 @@ function startTimer() {
         min = "0" + min;
     }
     if (min<0){
-        window.open("index.html", "_self")
+        alert(`Your score is ${score}\nClick on OK to play again`);
+        location.reload();
         return
     }
 
@@ -31,22 +53,8 @@ function checkSec(sec) {
     return sec;
 }
 
-function checkans() {
-    const ansPanelText = document.querySelector(`#q${slideIndex}`);
-    
-    var input = document.getElementById(`userInput${slideIndex}`).value;
-    var _src = document.getElementById(`sat${slideIndex}`).src.slice(29, -5).split('_');
-    console.log(_src)
-    if (_src.includes(input.toLowerCase())) 
-        {alert("CORRECT ANSWER!");
-        ansPanelText.textContent = "Answered";
-        document.getElementById(`q${slideIndex}`).style.color = "lime";
-        document.getElementById(`userInput${slideIndex}`).style.backgroundColor = "lightgreen";} else
-         {alert("WRONG ANSWER!")
-         ansPanelText.textContent = "Wrong Answer";
-         document.getElementById(`q${slideIndex}`).style.color = "red";
-         document.getElementById(`userInput${slideIndex}`).style.backgroundColor = "coral"};
-}
+var score = 0;
+
 
 window.addEventListener("keydown", (e) => {
     if (e.key === "ArrowLeft"){
