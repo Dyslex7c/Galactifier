@@ -19,7 +19,7 @@ function checkans() {
          
 }
 
-document.getElementById("countdown-timer").innerHTML = "01:00";
+document.getElementById("countdown-timer").innerHTML = "02:00";
 startTimer();
 function startTimer() {
     var time = document.getElementById("countdown-timer").innerHTML;
@@ -126,7 +126,37 @@ var locations = [
     "cities/hyderabad2.png",
     "cities/hyderabad3.png",
     "cities/hyderabad4.png",
-    "cities/hyderabad5.png"
+    "cities/hyderabad5.png",
+    "cities/miami1.png",
+    "cities/miami2.png",
+    "cities/miami3.png",
+    "cities/miami4.png",
+    "cities/miami5.png",
+    "cities/rio de janeiro1.png",
+    "cities/rio de janeiro2.png",
+    "cities/rio de janeiro3.png",
+    "cities/rio de janeiro4.png",
+    "cities/rio de janeiro5.png",
+    "cities/london1.png",
+    "cities/london2.png",
+    "cities/london3.png",
+    "cities/london4.png",
+    "cities/london5.png",
+    "cities/tokyo1.png",
+    "cities/tokyo2.png",
+    "cities/tokyo3.png",
+    "cities/tokyo4.png",
+    "cities/tokyo5.png",
+    "cities/new_york_city1.png",
+    "cities/new_york_city2.png",
+    "cities/new_york_city3.png",
+    "cities/new_york_city4.png",
+    "cities/new_york_city5.png",
+    "cities/sydney1.png",
+    "cities/sydney2.png",
+    "cities/sydney3.png",
+    "cities/sydney4.png",
+    "cities/sydney5.png"
 ];
 
 for (var satelliteimagecount = 1; satelliteimagecount <= 10; satelliteimagecount++) {
