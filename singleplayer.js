@@ -2,8 +2,9 @@ function checkans() {
     const ansPanelText = document.querySelector(`#q${slideIndex}`);
     
     var input = document.getElementById(`userInput${slideIndex}`).value;
-    var _src = document.getElementById(`sat${slideIndex}`).src.slice(29, -5).split('_');
-    console.log(_src)
+    var _srcn = document.getElementById(`sat${slideIndex}`).src.slice(29, -5).split('_');
+    var _src = _srcn.toString().replace(/%20/g, " ");
+    console.log(_src);
     if (_src.includes(input.toLowerCase())) 
         {alert("CORRECT ANSWER!");
         score += 4;
@@ -147,21 +148,21 @@ var locations = [
     "cities/tokyo3.png",
     "cities/tokyo4.png",
     "cities/tokyo5.png",
-    "cities/new_york_city1.png",
-    "cities/new_york_city2.png",
-    "cities/new_york_city3.png",
-    "cities/new_york_city4.png",
-    "cities/new_york_city5.png",
+    "cities/new york city1.png",
+    "cities/new york city2.png",
+    "cities/new york city3.png",
+    "cities/new york city4.png",
+    "cities/new york city5.png",
     "cities/sydney1.png",
     "cities/sydney2.png",
     "cities/sydney3.png",
     "cities/sydney4.png",
     "cities/sydney5.png",
-    "cities/los_angeles1.png",
-    "cities/los_angeles2.png",
-    "cities/los_angeles3.png",
-    "cities/los_angeles4.png",
-    "cities/los_angeles5.png",
+    "cities/los angeles1.png",
+    "cities/los angeles2.png",
+    "cities/los angeles3.png",
+    "cities/los angeles4.png",
+    "cities/los angeles5.png",
     "cities/paris1.png",
     "cities/paris2.png",
     "cities/paris3.png",
@@ -172,11 +173,21 @@ var locations = [
     "cities/moscow3.png",
     "cities/moscow4.png",
     "cities/moscow5.png",
-    "cities/buenos_aires1.png",
-    "cities/buenos_aires2.png",
-    "cities/buenos_aires3.png",
-    "cities/buenos_aires4.png",
-    "cities/buenos_aires5.png"
+    "cities/buenos aires1.png",
+    "cities/buenos aires2.png",
+    "cities/buenos aires3.png",
+    "cities/buenos aires4.png",
+    "cities/buenos aires5.png",
+    "cities/istanbul1.png",
+    "cities/istanbul2.png",
+    "cities/istanbul3.png",
+    "cities/istanbul4.png",
+    "cities/istanbul5.png",
+    "cities/madrid1.png",
+    "cities/madrid2.png",
+    "cities/madrid3.png",
+    "cities/madrid4.png",
+    "cities/madrid5.png"
 ];
 
 for (var satelliteimagecount = 1; satelliteimagecount <= 10; satelliteimagecount++) {
