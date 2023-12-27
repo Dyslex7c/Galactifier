@@ -156,7 +156,27 @@ var locations = [
     "cities/sydney2.png",
     "cities/sydney3.png",
     "cities/sydney4.png",
-    "cities/sydney5.png"
+    "cities/sydney5.png",
+    "cities/los_angeles1.png",
+    "cities/los_angeles2.png",
+    "cities/los_angeles3.png",
+    "cities/los_angeles4.png",
+    "cities/los_angeles5.png",
+    "cities/paris1.png",
+    "cities/paris2.png",
+    "cities/paris3.png",
+    "cities/paris4.png",
+    "cities/paris5.png",
+    "cities/moscow1.png",
+    "cities/moscow2.png",
+    "cities/moscow3.png",
+    "cities/moscow4.png",
+    "cities/moscow5.png",
+    "cities/buenos_aires1.png",
+    "cities/buenos_aires2.png",
+    "cities/buenos_aires3.png",
+    "cities/buenos_aires4.png",
+    "cities/buenos_aires5.png"
 ];
 
 for (var satelliteimagecount = 1; satelliteimagecount <= 10; satelliteimagecount++) {
