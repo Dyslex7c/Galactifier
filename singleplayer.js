@@ -198,36 +198,4 @@ for (var satelliteimagecount = 1; satelliteimagecount <= 10; satelliteimagecount
     locations = locations.filter(e => e.length);
 }
 
-
-/*let j = Math.floor(Math.random()*locations.length);
-if (typeof sat2.src !== String) {sat2.src = locations[j];
-    console.log(j);
-    console.log(`Image ${sat2.src}`);
-    delete locations[j];
-    locations = locations.filter(e => e.length);
-    }
-
-let k = Math.floor(Math.random()*locations.length);
-if (typeof sat3.src !== String) {sat3.src = locations[k];
-    console.log(k);
-    console.log(`Image ${sat3.src}`);
-    delete locations[k];
-    locations = locations.filter(e => e.length);
-    }
-
-let l = Math.floor(Math.random()*locations.length);
-if (typeof sat4.src !== String) {sat4.src = locations[l];
-        console.log(l);
-        console.log(`Image ${sat4.src}`);
-        delete locations[l];
-        locations = locations.filter(e => e.length);
-        }
-
-let m = Math.floor(Math.random()*locations.length);
-if (typeof sat5.src !== String) {sat5.src = locations[m];
-        console.log(m);
-        console.log(`Image ${sat5.src}`);
-        delete locations[m];
-        locations = locations.filter(e => e.length);
-        }*/
 console.log(locations);
